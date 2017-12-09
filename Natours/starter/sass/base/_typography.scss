@@ -55,3 +55,37 @@ body {
     animation: moveInRight 1s ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: .4s;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    // transform: rotateX(180deg);
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .5);
+  }
+}
+
+.heading-tertiary {
+  font-size: $font-size-default;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $font-size-default;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
